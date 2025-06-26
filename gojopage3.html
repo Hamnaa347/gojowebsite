@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gojo Additional Info – Page 3</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00CCCC;
+            margin-top: 30px;
+            font-weight: 900;
+            text-shadow: 0 0 4px #00CCCC;
+        }
+
+        h2 {
+            color: #FF69B4;
+            margin: 40px 0 15px;
+            font-weight: 700;
+            text-shadow: 0 0 3px #FF69B4;
+            cursor: pointer;
+        }
+
+        p,
+        li {
+            color: #CCCCCC;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #111;
+            border-radius: 15px;
+            box-shadow: 0 0 8px #00CCCC;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 20px auto;
+            max-width: 700px;
+            text-align: left;
+        }
+
+        li::before {
+            content: "✦ ";
+            color: #FFD700;
+        }
+
+        .face {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #FFD700;
+            text-align: center;
+            margin: 20px auto;
+            padding-top: 35px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 0 5px #FFD700;
+            user-select: none;
+            transition: all 0.3s ease;
+        }
+
+        .face:hover {
+            background-color: #00CCCC;
+            color: white;
+            box-shadow: 0 0 12px #00CCCC;
+        }
+
+        .nav-links {
+            margin: 20px 0 40px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            color: #00CCCC;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            text-shadow: 0 0 3px #00CCCC;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FF69B4;
+            text-decoration: underline;
+            text-shadow: 0 0 6px #FF69B4;
+        }
+
+        /* FAQ styling */
+        .faqbox {
+            max-width: 800px;
+            margin: 20px auto 40px;
+            background-color: #222;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 8px #00CCCC;
+            text-align: left;
+        }
+
+        .faq-list-item + .faq-list-item {
+            margin-top: 25px;
+        }
+
+        .answer {
+            padding-left: 15px;
+            margin-top: 6px;
+            color: #bbb;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            // Face feedback click actions
+            $("div.face").click(function () {
+                $(this).css({ "background-color": "#00CCCC", "color": "black", "box-shadow": "0 0 12px #00CCCC" });
+            });
+
+            $("#face1").click(function () {
+                $(this).text("Wohoo! Gojo is unstoppable!");
+            });
+            $("#face2").click(function () {
+                $(this).text("More cursed techniques, please!");
+            });
+            $("#face3").click(function () {
+                $(this).text("No worries, even Gojo has flaws!");
+            });
+
+            // FAQ toggle answers
+            $(".faq-list-item > h2").click(function () {
+                $(this).next(".answer").slideToggle(200);
+            });
+
+            // Initially hide all answers
+            $(".answer").hide();
+        });
+    </script>
+</head>
+<body>
+    <h1>Gojo Satoru – Additional Info</h1>
+
+    <div class="nav-links">
+        <a href="index.html">← Back to Home</a>
+        <a href="page 2.html">← Go to Page 2</a>
+    </div>
+
+    <section>
+        <h2>Legendary Powers & Abilities</h2>
+        <p>Gojo Satoru isn’t just any sorcerer — he’s the strongest, with abilities that seem almost divine.</p>
+        <ul>
+            <li><strong>Limitless Technique:</strong> Manipulates space to control attacks and defenses.</li>
+            <li><strong>Six Eyes:</strong> Allows near-perfect perception of cursed energy and its flow.</li>
+            <li><strong>Infinity:</strong> Creates an infinite space between himself and any threat.</li>
+            <li><strong>Domain Expansion — Infinite Void:</strong> Overwhelms enemies with endless information, paralyzing them.</li>
+        </ul>
+    </section>
+
+    <section class="faqbox">
+        <h1>FAQ</h1>
+        <ul>
+            <li class="faq-list-item">
+                <h2>What is Infinity?</h2>
+                <div class="answer">
+                    <p>Infinity means limitless space between himself and others, making him untouchable through his cursed technique, Limitless.</p>
+                </div>
+            </li>
+            <li class="faq-list-item">
+                <h2>What is Hollow Purple?</h2>
+                <div class="answer">
+                    <p>Hollow Purple is Gojo Satoru’s devastating technique combining Blue and Red, erasing everything in its path with immense destructive power.</p>
+                </div>
+            </li>
+            <li class="faq-list-item">
+                <h2>What is Domain Expansion?</h2>
+                <div class="answer">
+                    <p>Gojo Satoru’s Domain Expansion, Unlimited Void, traps opponents in infinite information, overwhelming their senses and rendering them helpless within his control.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Customer Feedback: How Do You Feel About Gojo?</h2>
+        <div class="face" id="face1">Happy Fan</div>
+        <div class="face" id="face2">Want More</div>
+        <div class="face" id="face3">Not Impressed</div>
+    </section>
+
+    <div class="nav-links">
+        <a href="index.html">← Back to Home</a>
+        <a href="page 2.html">← Go to Page 2</a>
+    </div>
+</body>
+</html>

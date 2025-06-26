@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gojo Satoru</title>
+  <style>
+      p, li {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #fff;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "🌟 ";
+    }
+
+    img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 12px;
+      border: 4px solid #00FFFF;
+      box-shadow: 0 0 10px #00FFFF;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      background: linear-gradient(45deg, #00c3ff, #ffff1c);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+
+    .box {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #ff6ec4, #7873f5);
+      margin: 10px;
+      line-height: 100px;
+      font-weight: bold;
+      border-radius: 20px;
+      color: white;
+      box-shadow: 0 0 10px white;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.1);
+      background: black;
+    }
+
+    a {
+      color: #00FFFF;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gojo Satoru</h1>
+  <a href="page2.html">Learn More</a>
+  <a href="gojopage3.html">Gojo pg.3</a>
+
+  <section>
+    <p>
+      Gojo Satoru is a powerful sorcerer from <strong>Jujutsu Kaisen</strong>. He's stylish, sarcastic, and one of the strongest characters in anime.
+    </p>
+  </section>
+
+  <section>
+    <h2>Cool Facts About Gojo</h2>
+    <ul>
+      <li>Born December 7th, 1989</li>
+      <li>Wears a blindfold or sunglasses</li>
+      <li>Loves sweets like mochi</li>
+      <li>Can use "Domain Expansion: Infinite Void"</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Quotes</h2>
+    <p class="quote">"Throughout heaven and earth, I alone am the honored one."</p>
+    <p class="quote">"I'm the strongest, after all."</p>
+  </section>
+
+  <section>
+    <h2>Gojo in Action</h2>
+    <img src="gojo1.jpg" alt="Gojo 1">
+    <img src="gojo2.jpg" alt="Gojo 2">
+    <img src="gojo3.jpg" alt="Gojo 3">
+    <br />
+    <button onclick="document.querySelectorAll('img').forEach(img => img.style.display = 'none');">Hide Images</button>
+    <button onclick="document.querySelectorAll('img').forEach(img => img.style.display = 'inline-block');">Show Images</button>
+  </section>
+
+  <section>
+    <h2>GOGO CARDS</h2>
+    <div class="box">infinity</div>
+    <div class="box">hollow</div>
+    <div class="box">purple</div>
+    <div class="box">blue eyes</div>
+    <div class="box">king</div>
+  </section>
+
+</body>
+</html>
